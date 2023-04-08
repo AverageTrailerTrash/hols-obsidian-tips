@@ -1,6 +1,6 @@
 # Hol's Obsidian Tips
 
-This is a vault with some of my personal Obsidian tips. It's not official in any way.
+This is a vault with some of my personal [Obsidian MD](http://www.obsidian.md/) tips. It's not official in any way.
 
 # Things to Know
 
