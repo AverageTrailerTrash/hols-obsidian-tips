@@ -1,4 +1,5 @@
 # Types of Notes
+#unfleshed
 
 ## General Utilities
 * [[Attribute Files]]
@@ -6,6 +7,7 @@
 
 ## General Files
 * [[Essay Files]]
+* [[Zettels]]
 
 ## For Educators & Fervent Students
 * [[Topic Files]]
