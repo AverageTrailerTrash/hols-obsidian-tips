@@ -2,7 +2,14 @@
 
 This is a vault with some of my personal Obsidian tips. It's not official in any way.
 
-This is a recent WIP, so don't expect much yet.
+# Things to Know
+
+* This is a recent WIP, so don't expect much yet.
+* Some meta functionality in this vault requires the Dataview plugin (not included).
+* This is more of a wiki / text dump, rather than a guided course.
+* If you're struggling with eyestrain from the default theme, I recommend Minimal w/ the contrast set to True Black in the Minimal Theme Settings plugin.
+
+# Table of Contents
 
 ## Notetaking Tips
 
@@ -15,5 +22,5 @@ This is a recent WIP, so don't expect much yet.
 ## Plugin Development Tips
 * 
 
-## Meta Links
+## Meta Links (for me)
 * [[Unfleshed Notes]]

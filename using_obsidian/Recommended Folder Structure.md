@@ -1,6 +1,6 @@
 # Recommended Folder Structure
 
->[!x] This vault has a slightly different structure since it is about (mostly) one topic. More involved vaults call for more thorough organization.
+>[!x] This vault has a slightly different structure, as it is for public consumption and about (mostly) one topic. More involved vaults call for more thorough and consistent organization.
 
 I use a simple folder structure in most of my vaults, as well as on my computers.
 
