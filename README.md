@@ -18,6 +18,7 @@ This is a vault with some of my personal [Obsidian MD](http://www.obsidian.md/) 
 * [[Organizing Fundamentals]]
 * [[Types of Notes]]
 * [[Parts of a Note]]
+* [[Strategies]]
 
 ## Plugin Development Tips
 * 
