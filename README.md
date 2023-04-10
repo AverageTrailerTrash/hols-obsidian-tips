@@ -21,7 +21,7 @@ This is a vault with some of my personal [Obsidian MD](http://www.obsidian.md/) 
 * [[Strategies]]
 
 ## Plugin Development Tips
-* 
+* [[Understanding Obsidian's Technologies]]
 
 ## Meta Links (for me)
 * [[Unfleshed Notes]]
