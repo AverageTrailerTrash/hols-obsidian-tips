@@ -1,6 +1,6 @@
 # Understanding Obsidian's Technologies
 
-The first step to making an Obsidian app is understanding what kind of technology stack Obsidian is using, and what that means for best practices in plugin development.
+The first step to making an Obsidian plugin is understanding what kind of technology stack Obsidian is using, and what that means for best practices in plugin development.
 
 >[!note] Some of this might sound like jibberish, and that's fine. It'll make more sense once you get in the weeds.
 
