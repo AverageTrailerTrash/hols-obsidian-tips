@@ -6,11 +6,11 @@ The first step to making an Obsidian plugin is understanding what kind of techno
 
 ## The Basics
 
-Obsidian's desktop version is an **Electron** app. Electron is a local-first browser framework, which itself is created with **NodeJS** and **Chromium**. Chromium is an open-source browser & the same framework Chrome is built over. NodeJS provides an engine and various tools for using the **JavaScript** language to build local applications. 
+Obsidian's desktop version is an **Electron**^[[Electron's Official Site](https://www.electronjs.org/)] app. Electron is a local-first browser framework, which itself is created with **NodeJS**^[[NodeJS's Official Site](https://nodejs.org/en)] and **Chromium**^[[Chromium's Official Site](https://www.chromium.org/chromium-projects/)]. Chromium is an open-source browser & the same framework Chrome is built over. NodeJS provides an engine and various tools for using the **JavaScript**^[[JavaScript's Official Site](http://www.ecmascript.org/)] language to build local applications. 
 
 (Before Node, JavaScript was primarily used in web pages, not local applications. It allowed web developers to provide dynamic content instead of just static text and images, without requiring constant page refreshes.)
 
-Basically, this means that Obsidian is **a single-page web app that runs offline on the user's own device**, instead of on a website. It has its own browser built-in to display its content. Complex stuff in the background is handled with JavaScript via NodeJS, while the layout and styling are handled by web languages like **HTML** and **CSS**.
+Basically, this means that Obsidian is **a single-page web app that runs offline on the user's own device**, instead of on a website. It has its own browser built-in to display its content. Complex stuff in the background is handled with JavaScript via NodeJS, while the layout and styling are handled by web languages like **HTML**^[[HTML's Official Site](https://html.spec.whatwg.org/multipage/)] and **CSS**^[[CSS's Official Site](https://www.w3.org/Style/CSS/Overview.en.html)].
 
 >[!warning] Obsidian's mobile version uses other technologies -- I'm not entirely sure which. But JavaScript that doesn't directly rely on Node modules (like `fs`) will run fine on it, as will HTML and CSS.
 
@@ -20,7 +20,7 @@ You'll be able to specify if your plugin is exclusively for desktop users.
 
 Although Obsidian ultimately runs with JavaScript, it wasn't actually developed with JavaScript, and generally doesn't encourage using JavaScript in plugin development.
 
-Instead, **TypeScript** is used.
+Instead, **TypeScript**^[[TypeScript's Official Site](https://www.typescriptlang.org/)] is used.
 
 TypeScript is a "superset" of JavaScript. Meaning JavaScript is valid in TypeScript. But TypeScript provides lots of helpful optional features to make your JavaScript less prone to errors.
 
@@ -70,7 +70,7 @@ Obsidian used it for a reason, and you will too.
 
 ## Node Package Manager
 
-With that in mind, most plugin development is done through NPM, or the **Node Package Manager**. This service comes with your NodeJS installation, meaning installing NodeJS lets you use both `node` and `npm` commands in the terminal, and it has a significant impact on how Node projects operate.
+With that in mind, most plugin development is done through **NPM**^[[NPM's Official Site](https://www.npmjs.com/)], i.e. the **Node Package Manager**. This service comes with your NodeJS installation, meaning installing NodeJS lets you use both `node` and `npm` commands in the terminal, and it has a significant impact on how Node projects operate.
 
 >[!note] Neither NodeJS nor NPM has a user interface. Everything is done through the terminal with text. *See: [[Understanding the Terminal]]*
 
@@ -92,7 +92,7 @@ The `package.json` also has lots of options that are specifically for publishing
 
 ## Github
 
-So where *should* you publish your plugin? Obsidian manages its community contributions through **GitHub**, which is both a social site for sharing source code and program releases with the public, as well as a tool for developers and businesses to privately manage changes to their source code. 
+So where *should* you publish your plugin? Obsidian manages its community contributions through **GitHub**^[[Github's Official Site](https://github.com/)], which is both a social site for sharing source code and program releases with the public, as well as a tool for developers and businesses to privately manage changes to their source code. 
 
 >[!note] Github is based on **Git**, a popular and highly intelligent version-control tool that lets you track small changes throughout a codebase.
 
@@ -101,6 +101,25 @@ Although **Obsidian itself is not open-source**, there is an expectation that pl
 Since most developers will be using Github for their projects already, it makes sense for plugins to be managed through the site.
 
 >[!note] Obsidian plugins can be side-loaded / manually installed without being on GitHub and without having their source code published in an accessible form, in case you would like to make something for your private or commercial use.
+
+When your plugin is ready to share with others, you need to clone the [Obsidian Releases repository](https://github.com/obsidianmd/obsidian-releases), add your plugin information to it (following the rules and template they provide), and make a descriptive pull request with the appropriate flair, template, and such. [More information (at the official site).](<https://publish.obsidian.md/hub/04+-+Guides%2C+Workflows%2C+%26+Courses/Guides/How+to+add+your+plugin+to+the+community+plugin+list>)
+
+>[!note] A pull request is when you ask the mainainer of a Github repository (the codebase itself) to integrate your changes into the main codebase. In this case, you're asking to change the code of the in-app plugin marketplace to include your plugin.
+
+The plugin information they request (below) would match data in your `manifest.json`.
+
+```json
+{ 
+  "id": "",
+  "name": "", 
+  "author": "", 
+  "description": "",
+  "repo": "<github username>/<repository>", 
+  "branch": "master" 
+}
+```
+
+The pull request description has its own template that is more involved, which you'll be prompted to use when you go to make the PR.
 
 ## Markdown
 
